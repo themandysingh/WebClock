@@ -29,9 +29,16 @@ main {
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: all 0.5s;
+}
+
+#hour-hand {
+    width: 9vh;
+    right: 50%;
 }
 
 #sec-hand {
-    transition-timing-function: cubic-bezier(0, 2.13, 0.54, 0.99);
+    height: 0.7vh;
 }
+
+
+
