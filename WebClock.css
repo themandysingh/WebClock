@@ -37,8 +37,12 @@ main {
 }
 
 #sec-hand {
-    height: 0.7vh;
+    height: 0.7vh;  
 }
 
+.transition {
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 1.56, 0.58, 1);
+}
 
 

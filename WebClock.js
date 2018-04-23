@@ -8,6 +8,16 @@
         let time = new Date();
         let secondsHand = document.querySelector("#sec-hand");
         let degrees = 90 + (time.getSeconds() / 60) * 360;
+        let hands = document.querySelectorAll(".hand");
+        if (time.getSeconds() == 0) {    
+            for (let i = 0; i < hands.length; i++) {
+                hands[i].classList.remove("transition");
+            } 
+        } else {
+            for (let i = 0; i < hands.length; i++) {
+                hands[i].classList.add("transition");
+            }
+        }
         secondsHand.style.transform = `rotate(${degrees}deg)`;
 
         let minutesHand = document.querySelector("#min-hand");
